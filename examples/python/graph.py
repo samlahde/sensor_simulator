@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import time
 
 while(1):
-    df = pd.read_csv("data.csv", sep=';')
+    df = pd.read_csv("../output/data.csv", sep=';')
     data = df['Data']
     fig, (ax1, ax2) = plt.subplots(nrows=1, ncols=2, figsize=(10, 4))
     ax1.hist(data, bins=100)
